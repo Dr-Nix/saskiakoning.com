@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<a class="backlinks" href="{{ '/' | relative_url }}">Home</a>
+<span class="backlinks">// {{ page.title }}</span>
+
+{% if page.subtitle %}
+<div class="content-container">
+  <h2>{{ page.subtitle }}</h2>
+  {% if page.intro %}
+  <p>{{ page.intro }}</p>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="alternating-gallery">
+  {% for item in page.gallery %}
+  <div class="gallery-row">
+    <div class="gallery-image">
+      <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}">
+        <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
+        <div class="onderschrift">{{ item.title }}</div>
+      </a>
+    </div>
+    <div class="gallery-spacer"></div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-image">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+// Lightbox functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('lightbox-modal');
+  const modalImg = document.getElementById('lightbox-image');
+  const captionText = document.getElementById('lightbox-caption');
+  const triggers = document.getElementsByClassName('lightbox-trigger');
+  const closeBtn = document.getElementsByClassName('lightbox-close')[0];
+
+  // Add click event to all lightbox triggers
+  for (let i = 0; i < triggers.length; i++) {
+    triggers[i].onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+      modalImg.src = this.getAttribute('data-image');
+      captionText.innerHTML = this.getAttribute('data-title');
+    }
+  }
+
+  // Close modal when clicking the X
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close modal when clicking outside the image
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>

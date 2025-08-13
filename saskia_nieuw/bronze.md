@@ -1,0 +1,25 @@
+---
+layout: gallery
+title: "Bronze Sculptures"
+subtitle: "A series of Memories of Trees"
+intro: "When I look at trees I see living creatures. They grow and breathe. But they give us O2 and food, shadow, protection and energy. They bring beauty and harmony in the landscape. They form a connection between heaven and earth. Their history and experiences are shown in their shape as we can see, but memories are kept inside: children climbing in their branches, a couple dancing around, a horse passing by. These memories I show in my bronze trees."
+gallery:
+  - title: "Beslan - tree"
+    image: "IMG_3106.JPG"
+    link: "/bronze/beslan-tree/"
+  - title: "New Born"
+    image: "IMG_2073.JPG"
+    link: "/bronze/new-born/"
+  - title: "Birth"
+    image: "P1070420.jpg"
+    link: "/bronze/birth/"
+  - title: "Sleeping Beauty"
+    image: "P1070476.jpg"
+    link: "/bronze/sleeping-beauty/"
+  - title: "Cinderella"
+    image: "P1070444.jpg"
+    link: "/bronze/cinderella/"
+  - title: "Horse Tree"
+    image: "162-6257_IMG.JPG"
+    link: "/bronze/horse-tree/"
+---

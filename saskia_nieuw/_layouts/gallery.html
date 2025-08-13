@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<a class="backlinks" href="{{ '/' | relative_url }}">Home</a>
+<span class="backlinks">// {{ page.title }}</span>
+
+{% if page.subtitle %}
+<div class="content-container">
+  <h2>{{ page.subtitle }}</h2>
+  {% if page.intro %}
+  <p>{{ page.intro }}</p>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="alternating-gallery">
+  {% for item in page.gallery %}
+  <div class="gallery-row">
+    <div class="gallery-image">
+      <a href="{{ item.link | relative_url }}">
+        <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
+        <div class="onderschrift">{{ item.title }}</div>
+      </a>
+    </div>
+    <div class="gallery-spacer"></div>
+  </div>
+  {% endfor %}
+</div>
