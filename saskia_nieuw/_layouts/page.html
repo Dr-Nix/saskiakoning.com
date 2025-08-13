@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% unless page.hide_nav %}
+<a class="backlinks" href="{{ '/' | relative_url }}">Home</a>
+<span class="backlinks">// {{ page.title }}</span>
+{% endunless %}
+
+<div class="content-container">
+  {{ content }}
+</div>
