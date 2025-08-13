@@ -319,3 +319,36 @@ h2 {
     font-size: 35px;
   }
 }
+
+/* Biography layout */
+.bio-section {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.bio-image {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.bio-quote {
+  flex: 1;
+}
+
+.quote {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #660000;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .bio-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}

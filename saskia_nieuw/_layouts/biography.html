@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<a class="backlinks" href="{{ '/' | relative_url }}">Home</a>
+<span class="backlinks">// {{ page.title }}</span>
+
+<div class="content-container">
+  <h2>{{ page.artist_name }}</h2>
+  
+  {{ content }}
+  
+  <div class="bio-section">
+    <img src="{{ '/assets/images/' | append: page.artist_image | relative_url }}" alt="{{ page.artist_name }}" class="bio-image" />
+    <div class="bio-quote">
+      <div class="quote">{{ page.quote_fr }}</div>
+      <br>
+      <div class="quote">{{ page.quote_en }}</div>
+    </div>
+  </div>
+
+  {% if page.bio_fr %}
+  <h3>Français</h3>
+  <p>{{ page.bio_fr }}</p>
+  {% endif %}
+
+  {% if page.timeline %}
+  <h3>Timeline</h3>
+  <ul>
+    {% for item in page.timeline %}
+    <li><strong>{{ item.year }}</strong>: {{ item.event }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.additional_info %}
+  <p>{{ page.additional_info }}</p>
+  {% endif %}
+</div>
