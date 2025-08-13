@@ -320,6 +320,70 @@ h2 {
   }
 }
 
+/* Artwork detail page styles */
+.artwork-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(175, 201, 239, 0.9);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.artwork-info {
+  margin-bottom: 2rem;
+}
+
+.artwork-specs {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.artwork-description {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.artwork-image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.artwork-image-item {
+  text-align: center;
+}
+
+.artwork-image-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.artwork-image-item img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .artwork-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .artwork-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Biography layout */
 .bio-section {
   display: flex;

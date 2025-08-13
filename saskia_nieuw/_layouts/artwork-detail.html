@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<a class="backlinks" href="{{ page.category_url | relative_url }}">{{ page.category }}</a>
+<span class="backlinks">// {{ page.title }}</span>
+
+<div class="artwork-container">
+  <div class="artwork-info">
+    {% if page.material or page.dimensions or page.year %}
+    <div class="artwork-specs">
+      {% if page.material %}<strong>Material:</strong> {{ page.material }}<br>{% endif %}
+      {% if page.dimensions %}<strong>Dimensions:</strong> {{ page.dimensions }}<br>{% endif %}
+      {% if page.year %}<strong>Year:</strong> {{ page.year }}{% endif %}
+    </div>
+    {% endif %}
+    
+    {% if page.description %}
+    <div class="artwork-description">
+      {{ page.description }}
+    </div>
+    {% endif %}
+    
+    {% if content != '' %}
+    <div class="artwork-content">
+      {{ content }}
+    </div>
+    {% endif %}
+  </div>
+
+  {% if page.images %}
+  <div class="artwork-image-grid">
+    {% for image in page.images %}
+    <div class="artwork-image-item">
+      <img src="{{ '/assets/images/' | append: image.file | relative_url }}" 
+           alt="{{ image.alt | default: page.title }}" 
+           class="lightbox-trigger"
+           data-image="{{ '/assets/images/' | append: image.file | relative_url }}"
+           data-title="{{ page.title }}" />
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-image">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+// Lightbox functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('lightbox-modal');
+  const modalImg = document.getElementById('lightbox-image');
+  const captionText = document.getElementById('lightbox-caption');
+  const triggers = document.getElementsByClassName('lightbox-trigger');
+  const closeBtn = document.getElementsByClassName('lightbox-close')[0];
+
+  for (let i = 0; i < triggers.length; i++) {
+    triggers[i].onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+      modalImg.src = this.getAttribute('data-image');
+      captionText.innerHTML = this.getAttribute('data-title');
+    }
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
