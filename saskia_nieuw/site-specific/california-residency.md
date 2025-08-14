@@ -1,0 +1,25 @@
+---
+layout: artwork-detail
+title: "Residency in Mendocino, California"
+category: "Site Specific"
+category_url: "/site-specific/"
+material: "Various materials"
+year: "September-Oktober 2011"
+images:
+  - file: "site-specific/california-residency/IMG_3622.jpg"
+    caption: "Tree-Spirit the making off"
+  - file: "site-specific/california-residency/IMG_3618.jpg"
+  - file: "site-specific/california-residency/IMG_3614.jpg"
+  - file: "site-specific/california-residency/IMG_3630.jpg"
+    caption: "Hendy woods"
+  - file: "site-specific/california-residency/IMG_4043.jpg"
+  - file: "site-specific/california-residency/IMG_4223.jpg"
+    caption: "Montgomery woods"
+  - file: "site-specific/california-residency/IMG_4453.jpg"
+    caption: "Hendy woods1 - charcoal, pastel"
+  - file: "site-specific/california-residency/IMG_4900.jpg"
+    caption: "Inauguration of the Pine-Spirit"
+  - file: "site-specific/california-residency/IMG_4949.jpg"
+  - file: "site-specific/california-residency/IMG_4958.jpg"
+    caption: "Pine Spirit + Pine"
+---

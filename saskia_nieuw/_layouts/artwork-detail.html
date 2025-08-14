@@ -38,7 +38,10 @@ layout: default
            alt="{{ image.alt | default: page.title }}" 
            class="lightbox-trigger"
            data-image="{{ '/assets/images/' | append: image.file | relative_url }}"
-           data-title="{{ page.title }}" />
+           data-title="{{ image.caption | default: page.title }}" />
+      {% if image.caption %}
+      <div class="image-caption">{{ image.caption }}</div>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

@@ -4,7 +4,7 @@ title: "Site Specific Sculptures"
 gallery:
   - title: "Residency in Mendocino California"
     image: "IMG_2860.jpg"
-    link: "/site-specific/california/"
+    link: "/site-specific/california-residency/"
   - title: "Cipressa"
     image: "judit foto 006.jpg"
     link: "/site-specific/cipressa/"
