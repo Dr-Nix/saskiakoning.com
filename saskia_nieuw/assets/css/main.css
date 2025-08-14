@@ -138,65 +138,67 @@ h2 {
   margin: 2rem 0;
 }
 
-.gallery-item {
+.gallery-grid .gallery-item {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 8px;
 }
 
-.gallery-item img {
+.gallery-grid .gallery-item img {
   max-width: 100%;
   height: auto;
   border: none;
 }
 
-/* Alternating gallery layout */
+/* Alternating stepping gallery layout - recreating original table-based design */
 .alternating-gallery {
   max-width: 800px;
   margin: 2rem auto;
   background: rgba(175, 201, 239, 0.9);
   border-radius: 8px;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: start;
 }
 
-.gallery-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
-  min-height: 400px;
-}
-
-.gallery-row:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.gallery-image {
-  flex: 0 0 50%;
+.alternating-gallery .gallery-item {
   text-align: center;
-  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
-.gallery-image img {
-  max-width: 300px;
-  max-height: 400px;
-  width: auto;
+.alternating-gallery .gallery-item:nth-child(even) {
+  margin-top: 150px;
+}
+
+.alternating-gallery .gallery-item:nth-child(odd):not(:first-child) {
+  margin-top: -150px;
+}
+
+.alternating-gallery .gallery-item img {
+  width: 350px;
   height: auto;
+  max-height: 400px;
+  object-fit: contain;
   border: none;
+  transition: opacity 0.2s ease;
 }
 
-.gallery-spacer {
-  flex: 1;
-  min-height: 300px;
-}
-
-.gallery-image a {
+.alternating-gallery .gallery-item a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
-.gallery-image a:hover {
+.alternating-gallery .gallery-item a:hover img {
   opacity: 0.8;
+}
+
+.alternating-gallery .gallery-item .onderschrift {
+  margin-top: 0.5rem;
+  display: block;
 }
 
 /* Responsive design */
@@ -219,18 +221,21 @@ h2 {
     padding: 1rem;
   }
   
-  .gallery-row {
-    flex-direction: column !important;
-    text-align: center;
-    min-height: auto;
+  .alternating-gallery {
+    padding: 1rem;
+    grid-template-columns: 1fr;
   }
   
-  .gallery-spacer {
-    display: none;
+  .alternating-gallery .gallery-item {
+    margin-bottom: 2rem;
   }
   
-  .gallery-image {
-    flex: none;
+  .alternating-gallery .gallery-item:nth-child(even) {
+    margin-top: 0;
+  }
+  
+  .alternating-gallery .gallery-item img {
+    width: 300px;
   }
 }
 
@@ -245,6 +250,10 @@ h2 {
   
   .alternating-gallery {
     padding: 1rem;
+  }
+  
+  .alternating-gallery .gallery-item img {
+    width: 250px;
   }
 }
 

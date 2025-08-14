@@ -18,14 +18,11 @@ layout: default
 
 <div class="alternating-gallery">
   {% for item in page.gallery %}
-  <div class="gallery-row">
-    <div class="gallery-image">
-      <a href="{{ item.link | relative_url }}">
-        <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
-        <div class="onderschrift">{{ item.title }}</div>
-      </a>
-    </div>
-    <div class="gallery-spacer"></div>
+  <div class="gallery-item">
+    <a href="{{ item.link | relative_url }}">
+      <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
+      <div class="onderschrift">{{ item.title }}</div>
+    </a>
   </div>
   {% endfor %}
 </div>
