@@ -4,7 +4,7 @@ title: "Contact"
 ---
 
 <div style="text-align: center; margin: 3rem 0;">
-  <img src="{{ '/assets/images/sas mail 5.jpg' | relative_url }}" alt="Email address" style="max-width: 350px;" />
+  <img src="{{ '/assets/images/sas mail 5.jpg' | relative_url }}" style="max-width: 350px;" />
 </div>
 
 <div style="text-align: center; margin: 3rem 0;">

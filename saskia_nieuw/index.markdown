@@ -65,7 +65,7 @@ hide_nav: true
 
   <div class="nav-item">
     <a href="{{ '/courses/' | relative_url }}">
-      <img src="{{ '/assets/images/IMG_2246.JPG' | relative_url }}" alt="Courses" />
+      <img src="{{ '/assets/images/courses.jpg' | relative_url }}" alt="Courses" />
       <div class="onderschrift">Courses</div>
     </a>
   </div>
