@@ -4,8 +4,10 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<a class="backlinks" href="{{ page.category_url | relative_url }}">{{ page.category }}</a>
-<span class="backlinks">// {{ page.title }}</span>
+<div class="content-container">
+  <a class="backlinks" href="{{ page.category_url | relative_url }}">{{ page.category }}</a>
+  <span class="backlinks">// {{ page.title }}</span>
+</div>
 
 <div class="artwork-container">
   <div class="artwork-info">
@@ -40,7 +42,7 @@ layout: default
            data-image="{{ '/assets/images/' | append: image.file | relative_url }}"
            data-title="{{ image.caption | default: page.title }}" />
       {% if image.caption %}
-      <div class="image-caption">{{ image.caption }}</div>
+      <div class="onderschrift">{{ image.caption }}</div>
       {% endif %}
     </div>
     {% endfor %}
