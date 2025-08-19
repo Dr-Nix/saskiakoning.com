@@ -18,16 +18,13 @@ layout: default
 </div>
 {% endif %}
 
-<div class="alternating-gallery">
+<div class="lightbox-gallery">
   {% for item in page.gallery %}
-  <div class="gallery-row">
-    <div class="gallery-image">
-      <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}">
-        <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
-        <div class="onderschrift">{{ item.title }}</div>
-      </a>
-    </div>
-    <div class="gallery-spacer"></div>
+  <div class="gallery-item">
+    <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}">
+      <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
+      <div class="onderschrift">{{ item.title }}</div>
+    </a>
   </div>
   {% endfor %}
 </div>
