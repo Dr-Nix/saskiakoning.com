@@ -76,7 +76,7 @@ news:
 
   - date: "September 13, 2008"
     description: "Opening Exhibition Voorst, the Netherlands"
-    image: "news/DSC_0017.jpg"
+    image: "news/opening-ceremony-sept-2008/DSC_0017.jpg"
     image_alt: "Opening ceremony"
     image_link: "/news/opening-ceremony-sept-2008/"
 

@@ -6,6 +6,6 @@ intro: "the Netherlands"
 gallery:
   - image: "Uitnood Bronkhorst klein.jpg"
     title: "Exhibition invitation"
-  - image: "news/Expo Bronkhorst klein.jpg"
+  - image: "news/bronkhorst2011/Expo Bronkhorst klein.jpg"
     title: "Exhibition Bronkhorst 2011"
 ---

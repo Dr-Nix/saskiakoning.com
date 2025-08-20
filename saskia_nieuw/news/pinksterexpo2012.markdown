@@ -6,6 +6,6 @@ intro: "Huize Ekeby, Voorst"
 gallery:
   - image: "Poster Pinksterexpositie 2012.jpg"
     title: "Poster Pinksterexpositie 2012"
-  - image: "news/site.jpg"
+  - image: "news/pinksterexpo2012/site.jpg"
     title: "Site information"
 ---

@@ -6,8 +6,8 @@ intro: "belgium bluestone, 1,55x0,75x1 m"
 gallery:
   - image: "IMG_8011.jpg"
     title: "Inspirare - Expirare"
-  - image: "news/IMG_8016.jpg"
+  - image: "news/inspirare2010/IMG_8016.jpg"
     title: "Inspirare - Expirare"
-  - image: "news/IMG_8017.jpg"
+  - image: "news/inspirare2010/IMG_8017.jpg"
     title: "Inspirare - Expirare"
 ---
