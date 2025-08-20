@@ -82,6 +82,8 @@ news:
 
   - date: "September 13-28, 2008"
     description: "Exhibition Voorst - Sculptures, the Netherlands"
+    link: "https://www.nelstarbusmann.nl"
+    link_text: "www.nelstarbusmann.nl"
     image: "Uitnood Saskia2.jpg"
     image_alt: "Uitnodiging Saskia 13 sept 2008"
     image_link: "/news/expositie-13-28-sept-2008/"
