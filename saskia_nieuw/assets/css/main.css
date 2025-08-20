@@ -266,19 +266,31 @@ h2 {
   
   .alternating-gallery {
     padding: 1rem;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
   }
   
   .alternating-gallery .gallery-item {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
   }
   
   .alternating-gallery .gallery-item:nth-child(even) {
     margin-top: 0;
   }
   
+  .alternating-gallery .gallery-item:nth-child(odd):not(:first-child) {
+    margin-top: 0;
+  }
+  
   .alternating-gallery .gallery-item img {
-    width: 300px;
+    width: 400px;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
   }
   
   .lightbox-gallery {
@@ -304,7 +316,7 @@ h2 {
   }
   
   .alternating-gallery .gallery-item img {
-    width: 250px;
+    width: 320px;
   }
   
   .lightbox-gallery {
