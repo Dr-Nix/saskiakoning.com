@@ -1,0 +1,26 @@
+---
+layout: lightbox-gallery
+title: "School Project"
+subtitle: "April 2007: \"Bij de kunstenaar thuis\""
+intro: "Primary school project - At the artist's home"
+gallery:
+  - image: "courses/school-project/atelier-foto 1.jpg"
+  - image: "courses/school-project/detail boombeeldje 1-1.jpg"
+    title: "boombeeldje 1-1"
+  - image: "courses/school-project/detail boombeeldje 2-2.jpg"
+    title: "boombeeldje 2-2"
+  - image: "courses/school-project/detail boombeeldje 1.jpg"
+    title: "boombeeldje 1"
+  - image: "courses/school-project/detail boombeeldje 2.jpg"
+    title: "boombeeldje 2"
+  - image: "courses/school-project/detail boombeeldje 3-1.jpg"
+    title: "boombeeldje 3-1"
+  - image: "courses/school-project/IMG_7937.jpg"
+  - image: "courses/school-project/detail boombeeldje 3.jpg"
+    title: "boombeeldje 3"
+  - image: "courses/school-project/detail boombeeldje 4-1.jpg"
+    title: "boobeeldje 4-1"
+  - image: "courses/school-project/IMG_7899.jpg"
+  - image: "courses/school-project/overzicht 2836.jpg"
+  - image: "courses/school-project/IMG_7948.jpg"
+---

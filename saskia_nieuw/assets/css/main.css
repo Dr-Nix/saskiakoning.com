@@ -129,7 +129,7 @@ h2 {
 
 /* Content containers */
 .content-container {
-  background: rgba(175, 201, 239, 0.9);
+  background: rgba(175, 201, 239, 0.8);
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -161,7 +161,7 @@ h2 {
 .alternating-gallery {
   max-width: 800px;
   margin: 2rem auto;
-  background: rgba(175, 201, 239, 0.9);
+  background: rgba(175, 201, 239, 0.8);
   border-radius: 8px;
   padding: 2rem;
   display: grid;
@@ -211,7 +211,7 @@ h2 {
 .lightbox-gallery {
   max-width: 800px;
   margin: 2rem auto;
-  background: rgba(175, 201, 239, 0.9);
+  background: rgba(175, 201, 239, 0.8);
   border-radius: 8px;
   padding: 2rem;
   display: flex;
@@ -410,7 +410,7 @@ h2 {
 .artwork-container {
   max-width: 900px;
   margin: 2rem auto;
-  background: rgba(175, 201, 239, 0.9);
+  background: rgba(175, 201, 239, 0.8);
   border-radius: 8px;
   padding: 2rem;
 }
@@ -507,7 +507,7 @@ h2 {
 .news-container {
   max-width: 1000px;
   margin: 2rem auto;
-  background: rgba(175, 201, 239, 0.9);
+  background: rgba(175, 201, 239, 0.8);
   border-radius: 8px;
   padding: 2rem;
 }

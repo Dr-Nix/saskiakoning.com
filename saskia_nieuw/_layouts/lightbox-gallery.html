@@ -21,10 +21,17 @@ layout: default
 <div class="lightbox-gallery">
   {% for item in page.gallery %}
   <div class="gallery-item">
+    {% if item.link %}
+    <a href="{{ item.link | relative_url }}">
+      <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
+      <div class="onderschrift">{{ item.title }}</div>
+    </a>
+    {% else %}
     <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}">
       <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
       <div class="onderschrift">{{ item.title }}</div>
     </a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
