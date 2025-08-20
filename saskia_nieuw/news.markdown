@@ -1,0 +1,95 @@
+---
+layout: news
+title: "News"
+news:
+  - date: "Altijd"
+    description: "Eenmalige afspraken zijn mogelijk voor het beeldhouwen in steen met een groep, voor een speciale gelegenheid"
+    location: "Lochem"
+
+  - date: "15, 16 en 17 april 2017"
+    description: "Deelname aan Kunstroute Lochem, met beelden en schilderijen."
+    details: "12.00 - 17.00 uur<br>Velhorst 4, 7241 TB Lochem"
+    link: "http://www.kunstinlochem.nl"
+    link_text: "www.kunstinlochem.nl"
+    image: "IMG_6167_small.jpg"
+    image_alt: "schilderij"
+
+  - date: "Maart 2015"
+    description: "Start nieuwe cursus"
+    location: "Lochem"
+
+  - date: "19 January - 23 February 2014"
+    description: "Exhibition: in \"Galerie de Burgerij\""
+    location: "Vorden, the Netherlands"
+
+  - date: "August, September, October 2012"
+    description: "Exhibition: bronze trees in \"de Levenstuinen van Het Groot Hontschoten\""
+    location: "Teuge, the Netherlands"
+
+  - date: "27 and 28 May 2012"
+    description: "\"Pinkster-expositie\""
+    location: "Huize Ekeby, Voorst"
+    image: "Poster Pinksterexpositie 2012.jpg"
+    image_alt: "poster 2012"
+    image_link: "/pinksterexpo2012/"
+
+  - date: "September-October 2011"
+    description: "Residency in Mendocino California"
+    link: "http://www.mendocinoartcenter.org"
+    link_text: "www.mendocinoartcenter.org"
+    image: "IMG_2860.jpg"
+    image_alt: "Mendocino"
+    image_link: "/californie2011/"
+
+  - date: "9-15 july 2011"
+    description: "Exhibition Bronkhorst, the Netherlands"
+    image: "Uitnood Bronkhorst klein.jpg"
+    image_alt: "bronkhorst"
+    image_link: "/bronkhorst2011/"
+
+  - date: "2010"
+    description: "Work in progress: Inspirare - Expirare"
+    image: "IMG_8011.jpg"
+    image_alt: "inspirare"
+    image_link: "/inspirare2010/"
+
+  - date: "25 june- 5 july 2009"
+    description: "Sculptor meeting"
+    details: "Villa Biener, Cipressa, Italy"
+    link: "http://www.villabiener.com"
+    link_text: "www.villabiener.com"
+    image: "judit foto 006.jpg"
+    image_alt: "Cipressa 06"
+    image_link: "/site-specific/"
+
+  - date: "31 may - 1 june 2009"
+    description: "\"Pinkster-expositie\""
+    location: "Huize Ekeby, Voorst"
+    image: "liggend jose.jpg"
+    image_alt: "pinkster expositie"
+    image_link: "/pinksterexpositie2009/"
+
+  - date: "30 Nov. - 21 Dec. 2008"
+    description: "Exhibition: Klarenbeek, the Netherlands"
+    link: "http://www.delandweg.nl/"
+    link_text: "Galerie de Landweg"
+
+  - date: "13 Sept. - 28 Sept 2008"
+    description: "Exhibition Voorst, the Netherlands"
+    image: "Uitnood Saskia2.jpg"
+    image_alt: "Uitnodiging Saskia 13 sept 2008"
+    image_link: "/expositie-13-28-sept-2008/"
+
+  - date: "11 Febr. - 10 March 2008"
+    description: "Exhibition EcoFuturiste, Monaco"
+    link: "http://www.artyecology.org/"
+    link_text: "www.artyecology.org"
+    image: "monaco park oud.jpg"
+    image_alt: "Monaco park - les jardins des Boulingrins 1930"
+
+  - date: "7-7-2007"
+    description: "Revelation of Tsunami monument (The wave)"
+    image: "070707_093.jpg"
+    image_alt: "tsunami monument"
+    image_link: "/tsunami-monument/"
+---

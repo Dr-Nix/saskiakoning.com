@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="backlinks-nav">
+  <a class="backlinks" href="{{ '/' | relative_url }}">Home</a>
+  <span class="backlinks">// {{ page.title }}</span>
+</div>
+
+<div class="news-container">
+  {% for item in page.news %}
+  <div class="news-item">
+    <div class="news-date">{{ item.date }}</div>
+    <div class="news-content">
+      <div class="news-description">{{ item.description }}</div>
+      {% if item.details %}
+      <div class="news-details">{{ item.details }}</div>
+      {% endif %}
+      {% if item.link %}
+      <div class="news-link">
+        <a href="{{ item.link }}" {% if item.link contains 'http' %}target="_blank"{% endif %}>{{ item.link_text | default: item.link }}</a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="news-location">
+      {% if item.image %}
+      <div class="news-image">
+        {% if item.image_link %}
+        <a href="{{ item.image_link | relative_url }}">
+        {% endif %}
+          <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.image_alt | default: item.description }}" />
+        {% if item.image_link %}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if item.location %}
+      <div class="news-location-text">{{ item.location }}</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
