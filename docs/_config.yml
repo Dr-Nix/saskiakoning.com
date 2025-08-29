@@ -23,8 +23,8 @@ email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   Website van beeldend kunstenaar Saskia Koning - bronzen beelden, 
   stenen beelden en schilderijen.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/saskiakoning.com" # the subpath of your site, e.g. /blog
+url: "https://dr-nix.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
