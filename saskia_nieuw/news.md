@@ -11,7 +11,7 @@ news:
     details: "12.00 - 17.00 uur<br>Velhorst 4, 7241 TB Lochem"
     link: "http://www.kunstinlochem.nl"
     link_text: "www.kunstinlochem.nl"
-    image: "IMG_6167_small.jpg"
+    image: "IMG_6167.jpg"
     image_alt: "schilderij"
 
   - date: "March 2015"
