@@ -27,9 +27,12 @@ layout: default
       <div class="onderschrift">{{ item.title }}</div>
     </a>
     {% else %}
-    <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}">
+    <a href="#" class="lightbox-trigger" data-image="{{ '/assets/images/' | append: item.image | relative_url }}" data-title="{{ item.title }}"{% if item.year %} data-year="{{ item.year }}"{% endif %}>
       <img src="{{ '/assets/images/' | append: item.image | relative_url }}" alt="{{ item.title }}" />
-      <div class="onderschrift">{{ item.title }}</div>
+      <div class="onderschrift">
+        {{ item.title }}
+        {% if item.year %}<div class="year">{{ item.year }}</div>{% endif %}
+      </div>
     </a>
     {% endif %}
   </div>
@@ -58,7 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       modal.style.display = "block";
       modalImg.src = this.getAttribute('data-image');
-      captionText.innerHTML = this.getAttribute('data-title');
+      const title = this.getAttribute('data-title');
+      const year = this.getAttribute('data-year');
+      captionText.innerHTML = year ? title + '<div class="year">' + year + '</div>' : title;
     }
   }
 
